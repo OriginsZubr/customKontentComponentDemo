@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-CustomElement.init((element, _context) => {
+window.CustomElement.init(() => {
   ReactDOM.render(
     <React.StrictMode>
       <App />
@@ -12,5 +12,5 @@ CustomElement.init((element, _context) => {
   );
 });
 
-CustomElement.setHeight(150);
+window.CustomElement.setHeight(150);
 
